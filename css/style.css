@@ -1,9 +1,99 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-body{
+html{
     font-family: 'Montserrat', sans-serif;
     font-size: 125%;
     }
+
+body{
+    line-height: 1.5;
+    }
+
+.headerWrapper{
+    width: 100%;
+    position: fixed;
+    
+    background-image:
+        linear-gradient(
+          to bottom,
+          hsl(211.88, 65.98%, 38.04%) 0%,
+          hsla(211.88, 65.98%, 38.04%, 0.993) 14.5%,
+          hsla(211.88, 65.98%, 38.04%, 0.971) 26.7%,
+          hsla(211.88, 65.98%, 38.04%, 0.937) 36.9%,
+          hsla(211.88, 65.98%, 38.04%, 0.892) 45.3%,
+          hsla(211.88, 65.98%, 38.04%, 0.836) 52.1%,
+          hsla(211.88, 65.98%, 38.04%, 0.772) 57.8%,
+          hsla(211.88, 65.98%, 38.04%, 0.7) 62.5%,
+          hsla(211.88, 65.98%, 38.04%, 0.621) 66.6%,
+          hsla(211.88, 65.98%, 38.04%, 0.538) 70.3%,
+          hsla(211.88, 65.98%, 38.04%, 0.45) 73.9%,
+          hsla(211.88, 65.98%, 38.04%, 0.36) 77.6%,
+          hsla(211.88, 65.98%, 38.04%, 0.269) 81.8%,
+          hsla(211.88, 65.98%, 38.04%, 0.178) 86.8%,
+          hsla(211.88, 65.98%, 38.04%, 0.088) 92.7%,
+          hsla(211.88, 65.98%, 38.04%, 0) 100%); 
+    opacity:0.9 ;
+    }
+
+.headerWrapper a{
+    color: #fff;
+    font-family: 'Sedgwick Ave', cursive;
+    letter-spacing: .20rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding-top: .8rem;
+    line-height: 1;
+    }
+.headerWrapper a:nth-child(2){
+    font-size:1rem;
+    font-weight: 400;    
+    }
+.headerWrapper span{
+    font-family:'Montserrat', sans-serif;
+    letter-spacing: -.1rem;
+    }
+
+.pageHeader img{
+    display: block;
+    max-width: 100%;
+    height: auto; 
+    }
+
+#mobileBtn-chk {
+    display: none ;
+    }
+
+.mobileBtn{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    position: fixed;
+    top: .5rem;
+    right: 1rem;
+    z-index: 9999;
+    background-image: url(ui-img/open-buttom.svg);
+    background-size: 72%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all .3s;
+    }
+
+ #mobileBtn-chk:checked ~ .mobileBtn {
+    transform: rotate(90deg) ;
+    background-image: url(ui-img/close-buttom.svg) ;
+    }
+    
+#mobileBtn-chk:checked ~ .pageHeader {
+    transform: translate(0%) ;
+    }
+
+
+
