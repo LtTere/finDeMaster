@@ -15,7 +15,9 @@ body{
 
 .logo{
     width: 100%;
+    height: 23%;
     position: fixed;
+    z-index: 9998;
     background-image:linear-gradient(to bottom,
           hsl(211.88, 65.98%, 38.04%) 0%,
           hsla(211.88, 65.98%, 38.04%, 0.993) 14.5%,
@@ -29,8 +31,8 @@ body{
           hsla(211.88, 65.98%, 38.04%, 0.538) 70.3%,
           hsla(211.88, 65.98%, 38.04%, 0.45) 73.9%,
           hsla(211.88, 65.98%, 38.04%, 0.36) 77.6%,
-          hsla(211.88, 65.98%, 38.04%, 0.269) 81.8%,
-          hsla(211.88, 65.98%, 38.04%, 0.178) 86.8%,
+          hsla(211.88, 65.98%, 38.04%, 0.269) 81.8%, 
+          hsla(211.88, 65.98%, 38.04%, 0.178) 86.8%, 
           hsla(211.88, 65.98%, 38.04%, 0.088) 92.7%,
           hsla(211.88, 65.98%, 38.04%, 0) 100%); 
           animation: ascendingLetters 1.5s ease-in-out;
@@ -40,13 +42,20 @@ body{
         0%{
             opacity: 0;
           }
+        25%{
+            opacity: .25;
+            }
         50%{
             opacity: .50;
            }
+        75%{
+            opacity: .75;
+            }
         100%{
             opacity: 1;
             }
         }
+        
 
 .logo a{
     color: #fff;
@@ -58,7 +67,7 @@ body{
     display: block;
     text-align: center;
     cursor: pointer;
-    padding-top: .8rem;
+    margin-top: .8rem;
     line-height: 1;
     }
 
@@ -73,25 +82,25 @@ body{
     }
 
 .menu{
-    width: 70% ;
+    width: 80%;
     position: fixed ;
     top: 0 ;
-	right: 0 ;
+	left: 0 ;
 	background-color:#fff ;
 	z-index: 9998 ;
-	border-left: 1px solid #E3E3E3 ;
-	transform: translate(100%) ;
+	border-left: 1px solid #E3E3E3 ; 
+	transform: translate(-100%) ;
     transition: all .4s ;
-    box-sizing: border-box;
     }
 
 .menu a{
     display: block;
     text-decoration: none;
-    padding: .5rem 1rem 0.5rem 1.5rem;
     color: #223;
+    font-size: .75rem;
     font-weight: bold;
-    background-color: transparent;
+    margin-left: 2rem;
+    padding-bottom: .43rem;
     }
 
 .menu a:hover{
@@ -106,7 +115,7 @@ body{
     margin-top: 2.5rem;
     }
 .menu li:last-child{
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     }
 
 #mobileBtn-chk {
@@ -114,12 +123,12 @@ body{
     }
 
 .mobileBtn{
-    width: 2rem;
+    width: 1.5rem;
     height: 2rem;
     display: block;
     position: fixed;
     top: .5rem;
-    right: 1rem;
+    left: .4rem;
     z-index: 9999;
     background-image: url(ui-img/open-buttom.svg);
     background-size: 72%;
@@ -142,30 +151,34 @@ body{
     display: block;
     max-width: 100%;
     height: auto; 
+    position: relative;
+    top: 0;
+    left: 0;
     }
-
+/*     
 .mousewheel {
     position: absolute ;
+    top: 40% ;
+    left: 50% ;
+    transform: translateX(-50%) ;
     width: 1.5rem ;
     height: 2.5rem ;
     border-radius: 2rem ;
     border: .15rem solid #223 ;
-    z-index: 1 ;
-    bottom: 4% ;
-    left: 50% ;
-    transform: translateX(-50%) ;
+    z-index: 1 ; 
+    cursor: pointer;
     }
-
+    
 .mousewheel::after {
     content: "" ;
-    width: 4px ;
-    height: 14px ;
-    border-radius: 60px ;
+    width: .15rem ;
+    height: .7rem ;
+    border-radius: 3rem ;
     background-color: #223 ;
     position: absolute ;
     left: 50% ;
-    margin-left: -2px ;
-    top: 15px ;
+    margin-left: -.1rem ;
+    top: .8rem ;
     animation: scrolling 1s infinite ease-in-out ;
     }
     
@@ -173,7 +186,8 @@ body{
         80% {
             transform: translateY(100%);
         }
-    }
+    } */
+
     
     
     
