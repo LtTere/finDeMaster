@@ -11,7 +11,7 @@ body{
 
 .logo{
     width: 100vw;
-    height: 23vh;
+    /* height: 23vh; */
     position: fixed;
     z-index: 9998;
     background-image:linear-gradient(to bottom,
@@ -46,8 +46,7 @@ body{
     100%{
         opacity: 1;
         }
-    }
-        
+    }  
 
 .logo a{
     color: #fff;
@@ -59,7 +58,7 @@ body{
     display: block;
     text-align: center;
     cursor: pointer;
-    margin-top: .8vw;
+    margin-top: -1.5rem;
     line-height: 1;
     }
 
@@ -187,7 +186,7 @@ p .home{
     }
 
 p,h1,h2,h3,h4{
-    padding: 0 2rem;
+    padding: 0 9vw;
     margin-bottom: 2rem;
     color:#223;
     }
@@ -195,7 +194,6 @@ p,h1,h2,h3,h4{
 a{
     text-decoration: none;
     color: hotpink;
-
     }
 
 span{
@@ -206,6 +204,7 @@ h1{
     margin-top: 3rem;
     font-size: 1.7rem;
     font-weight: bold;
+    color: rgb(72, 77, 94);
     }
 
 h2,h3{
@@ -220,10 +219,13 @@ h4{
     }
     
 .viajeBg{
-    width: 100%;
-    display: inline-block;
-    background-image: url(ui-img/planear-viaje.jpg);
+    width: 100vw;
+    height: 30vh;
+    line-height: 30vh;
+    background-image: url(ui-img/planear-viaj.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     }
 
 .listOfLinks{
@@ -261,16 +263,6 @@ h4{
     }
 
 img article{
-    
+   
 
 }
-
-    
-    
-
-    
-    
-    
-
-
-
