@@ -9,9 +9,27 @@ body{
     color:#556;
     }
 
+.subtitleWrapper{
+    position: absolute;
+    width: 100%;
+    top:2%;
+    }
+
+.subtitle{
+    position:relative;
+    text-align:center;
+    }
+
+.subtitle a{
+    color:#fff;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    }
+
 .logo{
     width: 100vw;
-    /* height: 23vh; */
+    height: 23vh;
     position: fixed;
     z-index: 9998;
     background-image:linear-gradient(to bottom,
@@ -57,7 +75,6 @@ body{
     font-weight: 600;
     display: block;
     text-align: center;
-    cursor: pointer;
     margin-top: -1.5rem;
     line-height: 1;
     }
