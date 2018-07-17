@@ -133,7 +133,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    transition: all .s;
+    transition: all 4.s;
     }
 
 #mobileBtn-chk {
