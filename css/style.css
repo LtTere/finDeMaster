@@ -239,7 +239,7 @@ h4{
     height: 30vh;
     line-height: 30vh;
     margin-bottom: 3rem;
-    background-image: url(ui-img/planear-viaj.jpg);
+    background-image: url(ui-img/planear-viaje.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -254,7 +254,7 @@ h4{
     margin-bottom: 2rem;
     }
 
-.pointer, .pointerInternet, .pointerCard{
+.pointer, .pointerInternet{
     width: 1rem;
     height: 1rem;
     position: absolute;
@@ -270,8 +270,12 @@ h4{
 .pointerInternet{
    background-image: url(ui-img/pointer-internet.svg);
     }
-.wrappOfLinks .pointerCard{
+.listOfLinks li{
     background-image: url(ui-img/card.svg);
+    background-repeat: no-repeat;
+    background-size:1rem;
+    padding-left: 5vw;
+    margin-left: -5vw;
     }
 
 
