@@ -9,24 +9,6 @@ body{
     color:#556;
     }
 
-.subtitleWrapper{
-    position: absolute;
-    width: 100%;
-    top:2%;
-    }
-
-.subtitle{
-    position:relative;
-    text-align:center;
-    }
-
-.subtitle a{
-    color:#fff;
-    font-family: 'Sedgwick Ave', cursive;
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-    }
-
 .logo{
     width: 100vw;
     height: 23vh;
@@ -49,7 +31,7 @@ body{
           hsla(211.88, 65.98%, 38.04%, 0.178) 86.8%, 
           hsla(211.88, 65.98%, 38.04%, 0.088) 92.7%,
           hsla(211.88, 65.98%, 38.04%, 0) 100%); 
-          animation: ascendingLetters 1.5s ease-in-out;
+    animation: ascendingLetters 1.5s ease-in-out;
     }
 
 @keyframes ascendingLetters{
@@ -70,25 +52,35 @@ body{
     color: #fff;
     font-family: 'Sedgwick Ave', cursive;
     letter-spacing: .10rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
     font-weight: 600;
     display: block;
     text-align: center;
-    margin-top: -1.5rem;
-    line-height: 1;
+    margin-top: -6vh;
     }
 
 .logo span{
     font-family:'Montserrat', sans-serif;
     letter-spacing: -.1rem;
+    font-weight: bold;
     }
 
-.logo span:last-child{
+.subtitleWrapper{
+    position: absolute;
+    width: 100%;
+    top:18%;
+    }
+
+.subtitle{
+    position:relative;
+    text-align:center;
+    z-index: 9997;
+    color: #fff;
     font-family: 'Sedgwick Ave', cursive;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: .10rem;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    animation: ascendingLetters 1.5s ease-in-out;
     }
 
 .menu{
@@ -118,7 +110,7 @@ body{
     }
 
 .menu a:active{
-    transform: translateX(1rem);
+    transform: translateX(8vw);
     }
 
 .menu li:first-child{
@@ -133,15 +125,15 @@ body{
     height: 10vw;
     display: block;
     position: fixed;
-    top: .8rem;
-    left: .9rem;
+    top: 4vh;
+    left: 1.2vw;
     z-index: 9999;
     background-image: url(ui-img/open-buttom.svg);
     background-size: 72%;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    transition: all .3s;
+    transition: all .s;
     }
 
 #mobileBtn-chk {
@@ -161,10 +153,7 @@ body{
     display: block;
     max-width: 100%;
     height: auto; 
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     }
 /*     
 .mousewheel {
@@ -198,41 +187,51 @@ body{
             transform: translateY(100%);
         }
     } */
-p .home{
-    text-align: center;
-    }
 
-p,h1,h2,h3,h4{
+p{
     padding: 0 9vw;
     margin-bottom: 2rem;
-    color:#223;
+    }
+
+.home p{
+    text-align: center;
     }
 
 a{
     text-decoration: none;
-    color: hotpink;
+    color: rgb(123, 169,140);
     }
 
 span{
     font-weight: bold;
     }
 
-h1{
-    margin-top: 3rem;
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: rgb(72, 77, 94);
+h2, h3, h4{
+    padding: 0 9vw;
+    color:#223;
+    font-weight: 600;
     }
 
-h2,h3{
-    margin-top: 2.5rem;
-    font-size: 1.3rem;
-    font-weight: bold;
+h1{
+    color:#223;
+    padding: 0 9vw;
+    font-size: 2rem;
+    font-weight: 700;
+    }
+
+h2{
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+    }
+
+h3{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
     }
 
 h4{
-    font-size: 1.3rem;
-    margin-top: 2.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
     }
     
 .viajeBg{
@@ -245,15 +244,16 @@ h4{
     background-size: 100% 100%;
     }
 
-.listOfLinks{
+.wrappOfLinks{
+    position: relative;
     padding: 0 3rem;
     }
 
-.wrapLinks{
-    position: relative;
+.wrappOfLinks li{
+    margin-bottom: 2rem;
     }
 
-.pointer{
+.pointer, .pointerInternet{
     width: 1rem;
     height: 1rem;
     position: absolute;
@@ -264,19 +264,8 @@ h4{
     background-size: 90%;
     }
 
-.wrapOfLinks{
-    position: relative; 
-    }
-
 .pointerInternet{
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    left: 1.90rem;
-    top: .3rem;
-    background-image: url(ui-img/pointer-internet.svg);
-    background-repeat: no-repeat;
-    background-size: 90%;
+   background-image: url(ui-img/pointer-internet.svg);
     }
 
 img article{
