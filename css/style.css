@@ -11,7 +11,7 @@ body{
 
 .logo{
     width: 100vw;
-    height: 23vh;
+    height: 22vh;
     position: fixed;
     z-index: 9998;
     background-image:linear-gradient(to bottom,
@@ -69,13 +69,15 @@ body{
 .subtitleWrapper{
     position: absolute;
     width: 100%;
-    top:18%;
+    top:15%;
     }
 
 .subtitle{
     position:relative;
     text-align:center;
     z-index: 9997;
+    white-space: nowrap;
+
     color: #fff;
     font-family: 'Sedgwick Ave', cursive;
     font-size: 1.7rem;
@@ -234,7 +236,7 @@ h4{
     margin-bottom: 1rem;
     }
     
-.viajeBg{
+.viajeBg, .lugares{
     width: 100vw;
     height: 30vh;
     line-height: 30vh;
@@ -242,7 +244,12 @@ h4{
     background-image: url(ui-img/planear-viaje.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
+    }
+
+.lugares{
+    white-space: nowrap;
+    background-image: url(ui-img/lugares-de-ensueño.jpg);
     }
 
 .wrappOfLinks{
@@ -278,15 +285,9 @@ h4{
     margin-left: -5vw;
     }
 
-
-
-
-
-    
-
 article img{
     display: block;
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: 5% auto;
     }
