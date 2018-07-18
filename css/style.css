@@ -261,23 +261,23 @@ h4{
     margin-bottom: 2rem;
     }
 
-.pointer, .pointerInternet{
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    left: 9vw;
-    top: .3rem;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    }
-.pointer{
+.linkForm li{
     background-image: url(ui-img/pointer.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    padding-left: 5vw;
+    margin-left: -5vw;
     }
 
-.pointerInternet{
-   background-image: url(ui-img/pointer-internet.svg);
+.linkWeb li{
+    background-image: url(ui-img/pointer-internet.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    padding-left: 5vw;
+    margin-left: -5vw;
     }
-.listOfLinks li{
+
+.linkTarget li{
     background-image: url(ui-img/card.svg);
     background-repeat: no-repeat;
     background-size:1rem;
@@ -287,7 +287,7 @@ h4{
 
 article img{
     display: block;
-    width: 100%;
+    width: 40%;
     height: auto;
     margin: 5% auto;
     }
