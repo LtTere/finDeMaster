@@ -86,6 +86,7 @@ body{
     }
 
 .menu{
+    opacity: .75;
     width: 100vw;
     position: fixed ;
     top: 0 ;
