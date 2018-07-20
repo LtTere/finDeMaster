@@ -184,9 +184,12 @@ a{
     color: rgb(123, 169,140);
     }
 
-span{
+span, em{
     font-weight: bold;
     }
+em{
+    font-style: italic;
+}
 
 h2, h3, h4{
     padding: 0 9vw;
@@ -264,9 +267,7 @@ h4{
     margin: 5% auto;
     } 
 
-.timeSquare,
-.fifthAve,
-.empire{
+.placesImg{
     display: block;
     position: relative;
     width: 15rem;
@@ -274,21 +275,15 @@ h4{
     overflow: hidden;
     border-radius: 50%;
     margin: 2rem auto;
-    }
-
-.timeSquare img,
-.fifthAve img,
-.empire img{
+}
+.placesImg img{
     width:auto;
     height: 100%;
     transition: transform .3s cubic-bezier(.26,.8,.91,.91);
-    }
-
-.timeSquare img:hover,
-.fifthAve img:hover,
-.empire img:hover{
+}
+.placesImg img:hover{
     transform: scale(1.2);
-    }
+}
 
 iframe{
     width: 100%;
