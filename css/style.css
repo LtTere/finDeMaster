@@ -34,19 +34,19 @@ body{
     animation: ascendingLetters 1.5s ease-in-out;
     }
 
-@keyframes ascendingLetters{
-    0%{
-        opacity: 0;
-        }
-    
-    50%{
-        opacity: .50;
-        }
-    
-    100%{
-        opacity: 1;
-        }
-    }  
+    @keyframes ascendingLetters{
+        0%{
+            opacity: 0;
+            }
+        
+        50%{
+            opacity: .50;
+            }
+        
+        100%{
+            opacity: 1;
+            }
+        }  
 
 .logo a{
     color: #fff;
@@ -63,18 +63,18 @@ body{
 .logo span{
     font-family:'Montserrat', sans-serif;
     letter-spacing: -.1rem;
-    font-weight: bold;
     }
 
 .subtitleWrapper{
     position: absolute;
     width: 100%;
     top:15%;
+    margin-left: -1rem;
     }
 
 .subtitle{
     position:relative;
-    text-align:center;
+    text-align: center;
     z-index: 9997;
     white-space: nowrap;
     color: #fff;
@@ -168,38 +168,6 @@ body{
     margin-bottom: 4rem;
     border-bottom-left-radius:40rem 6rem ;
     }
-/*     
-.mousewheel {
-    position: absolute ;
-    top: 40% ;
-    left: 50% ;
-    transform: translateX(-50%) ;
-    width: 1.5rem ;
-    height: 2.5rem ;
-    border-radius: 2rem ;
-    border: .15rem solid #223 ;
-    z-index: 1 ; 
-    cursor: pointer;
-    }
-    
-.mousewheel::after {
-    content: "" ;
-    width: .15rem ;
-    height: .7rem ;
-    border-radius: 3rem ;
-    background-color: #223 ;
-    position: absolute ;
-    left: 50% ;
-    margin-left: -.1rem ;
-    top: .8rem ;
-    animation: scrolling 1s infinite ease-in-out ;
-    }
-    
-    @keyframes scrolling {
-        80% {
-            transform: translateY(100%);
-        }
-    } */
 
 p{
     padding: 0 9vw;
@@ -302,10 +270,7 @@ h4{
     height: auto;
     margin: 5% auto;
     } 
-.timesSquare{
-    transition: transform .4s ease-in-out;
-background-color: antiquewhite;   
-}
+
 .photoCard{
     display: block;
     position: relative;
