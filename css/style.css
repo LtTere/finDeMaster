@@ -272,7 +272,7 @@ h4{
     margin: 5% auto;
     } 
 
-.placesImg{
+.placesImage{
     display: block;
     position: relative;
     width: 15rem;
@@ -281,12 +281,12 @@ h4{
     border-radius: 50%;
     margin: 2rem auto;
     }
-.placesImg img{
+.placesImage img{
     width:auto;
     height: 100%;
     transition: transform .3s cubic-bezier(.26,.8,.91,.91);
     }
-.placesImg img:hover{
+.placesImage img:hover{
     transform: scale(1.2);
     }
 
@@ -297,4 +297,45 @@ iframe{
     margin: 0 auto;
     margin-bottom: 4rem;
     }
+.activitiesLinks{
+    position: relative;
+}
+.broadway li{
+    position: relative;
+    text-align: center;
+    }
 
+.broadway img{
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    opacity: 1;
+    }
+
+.broadway a{
+    
+    font-size: 1.5rem;
+    /* background-color:rgba(255,255,255, .8) ; */
+    font-weight: bold;
+    background-color: red;
+    position: absolute; 
+    left: 50%;
+    top: 0;
+    transform: translate(-50%); 
+    border-radius: 2px 2px 0 0; 
+    opacity: 0;
+    transition: all 1s;
+    
+}
+
+.broadway img a:hover{
+    opacity: 1;
+}
+
+
+
+    
+
+    
+   
