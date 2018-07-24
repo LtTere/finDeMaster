@@ -212,11 +212,11 @@ h2{
 
 h3{
     margin-bottom: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     }
 
 h4{
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 1rem;
     }
     
@@ -295,14 +295,13 @@ iframe{
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
-    margin-bottom: 4rem;
+    margin: 0 auto 4rem;
     }
 
-.broadway {
+.broadway, .madison {
     max-width: 400px;
     height: auto;
-    margin: 9vw;
+    margin: 2rem 9vw;
     border: .4rem solid #fff;
     overflow: hidden;
     text-align: center;
@@ -311,12 +310,12 @@ iframe{
     cursor: pointer;
     }
 
-.broadway img {
+.broadway img, .madison img {
     display: block;
     position: relative;
     }
 
-.broadway figcaption {
+.broadway figcaption, .madison figcaption {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -328,22 +327,45 @@ iframe{
     transition: all 0.4s ease-in-out;
     }
     
-.broadway figcaption a{
+.broadway figcaption a, .madison figcaption a{
     color: #fff;
+    display: block;
     position: relative;
-    top: 30%;
+    top: 8vh;
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
     }
 
-.broadway .linkBroadway a{
-    display: block;
+.broadway .linkBroadway a, .madison .linkMadison a{
     position:relative;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     }
 
-.broadway:hover figcaption {
+.broadway:hover figcaption, .madison:hover figcaption{
     opacity: 1;
+    }
+
+.wrappManhattan{
+   
+    padding-top: 56.25%;
+    position: relative;
+    }
+.manhattan iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    }
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #2c67b0;
+    }
+footer .social .twiter{
+    background-image: url()
     }
