@@ -69,7 +69,7 @@ body{
 .subtitleWrapper{
     position: absolute;
     width: 100%;
-    top:12%;
+    top:15%;
     margin-left: -1rem;
     }
 
@@ -168,7 +168,7 @@ body{
     max-width: 100%;
     height: auto; 
     margin-bottom: 4rem;
-    border-bottom-left-radius:70rem 6rem ;
+    border-bottom-left-radius:70rem 12rem ;
     }
 
 p{
@@ -370,6 +370,7 @@ footer{
     width: 100%;
     background-color: #25292e;
     margin: 2rem 0 0;
+
     }
 
 footer h1{
@@ -411,11 +412,15 @@ footer small{
     text-align: center;
     padding: 1rem;
     border-top: .5px solid rgb(200, 200, 206);
+    position: relative;
+
     }
 
 footer small a{
     color: #fff;
     }
+
+
 
 
 
