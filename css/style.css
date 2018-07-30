@@ -339,7 +339,6 @@ h4{
     }
 
 .broadway .linkBroadway a, .madison .linkMadison a{
-    position:relative;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     }
@@ -363,14 +362,12 @@ h4{
     transform: translate(-50%, -50%);
 	max-width: 100%;
     max-height: 100%;
-    
-}
+    }
 
 footer{
     width: 100%;
     background-color: #25292e;
     margin: 2rem 0 0;
-
     }
 
 footer h1{
@@ -418,6 +415,10 @@ footer small{
 
 footer small a{
     color: #fff;
+    }
+
+@media(max-width:650px){
+
     }
 
 
