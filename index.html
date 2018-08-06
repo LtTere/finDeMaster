@@ -26,10 +26,10 @@
              
     <nav class="menu">
         <ul>
-            <li><span>HOME</span></li>
-            <li><span>PLANIFICA TU VIAJE</span></li>
-            <li><span>LUGARES DE ENSUEÑO</span></li>
-            <li><span>QUÉ HACER</span></li>
+            <li><a data-scroll href="#home">HOME</a></li>
+            <li><a data-scroll href="#travel">PLANIFICA TU VIAJE</a></li>
+            <li><a data-scroll href="#places">LUGARES DE ENSUEÑO</a></li>
+            <li><a data-scroll href="#activities">QUÉ HACER</a></li>
         </ul>
     </nav>
       
@@ -39,7 +39,7 @@
 
 <main>
 
-    <section class="home">
+    <section id="home" class="wrapper section">
         <article>
 
         <p>
@@ -68,7 +68,7 @@
         </article>
     </section>
     
-    <section class="travel">
+    <section id="travel" class="wrapper section">
         <div class="travelBg">
             <h1>Planifica tu Viaje</h1>
         </div> 
@@ -150,7 +150,7 @@
 
         <article>
 
-            <h2>Apps útiles para viajar a Nueva York</h2>
+            <h2>Apps útiles pa ra viajar a Nueva York</h2>
 
                 <p>
                 ¿Ya tienes lista la maleta para viajar a Nueva York? Ahora toca dedicarle un ratito 
@@ -221,7 +221,7 @@
         </article>
     </section>
 
-    <section class="places">
+    <section id="places" class="wrapper section">
         <div class="placesBg">
             <h1>Lugares de ensueño</h1>
         </div>
@@ -421,7 +421,7 @@
         </div>
     </section>
 
-    <section class="activities">
+    <section id="activities" class="wrapper section">
         <div class="activitiesBg">
             <h1>Qué hacer...</h1>
         </div>
@@ -486,10 +486,11 @@
     </small>
 </footer>
    
-
-    <script src="js/libs/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
-
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+   
     
 </body>
 </html>
