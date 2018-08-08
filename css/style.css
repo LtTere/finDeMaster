@@ -135,7 +135,7 @@ body{
     margin-top: 4rem;
     }
 .menu li:last-child{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     }
 
 .mobileBtn{
@@ -254,39 +254,6 @@ h4{
 
 .wrappOfLinks li{
     margin-bottom: 2rem;
-    }
-
-.linkForm li .iconLink{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-bottom: -.3rem;
-    background-image: url(ui-img/pointer.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    display: inline-block
-    }
-
-.linkWeb li .iconLink{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-bottom: -.3rem;
-    background-image: url(ui-img/pointer-internet.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    display: inline-block
-    }
-
-.linkTarget li .iconLink{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-bottom: -.3rem;
-    background-image: url(ui-img/card.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    display: inline-block;
     }
 
 .passCard,.metroCard,.openTable{
