@@ -135,7 +135,7 @@ body{
     margin-top: 4rem;
     }
 .menu li:last-child{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     }
 
 .mobileBtn{
@@ -378,6 +378,7 @@ footer h1{
     color:  rgb(200, 200, 206);
     padding-top: 1rem;
     font-weight: 500;
+    background-color: transparent;
     }
 
 footer .social{
@@ -418,6 +419,8 @@ footer small{
 footer small a{
     color: #fff;
     }
+
+
 
 @media(max-width:650px){
 
