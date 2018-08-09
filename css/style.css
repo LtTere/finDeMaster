@@ -97,7 +97,6 @@ body{
 	z-index: 9998 ;
 	border-left: 1px solid #E3E3E3 ; 
 	transform: translate(-100vw) ;
-    transition: all .4s ;
     }
 
 
@@ -159,12 +158,12 @@ body{
     }
 
 #mobileBtn-chk:checked ~ .mobileBtn {
-    transform: rotate(90deg) ;
-    background-image: url(ui-img/close-buttom.svg) ;
+    transform: rotate(90deg);
+    background-image: url(ui-img/close-buttom.svg);
     }
     
 #mobileBtn-chk:checked ~ .menu {
-    transform: translate(0%) ;
+    transform: translate(0%);
     }
 
 .pageHeader img{
@@ -172,7 +171,7 @@ body{
     max-width: 100%;
     height: auto; 
     margin-bottom: 4rem;
-    border-bottom-left-radius:70rem 12rem ;
+    border-bottom-left-radius:70rem 12rem;
     }
 
 p{
@@ -421,7 +420,40 @@ footer small a{
 
 
 
-@media(max-width:650px){
+@media(min-width:650px){
+
+    .pageHeader img{
+        position: relative;
+        }
+    .menu{
+        position: absolute;
+        top: 0;
+        width: 30%;
+        background-color: transparent;
+        transform: translate(0);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+
+    .menu a{
+        width: 10rem;
+        height: 5rem;
+        padding: 3rem .2rem 0;
+        border:.4rem solid #fff;
+        box-shadow: 0 0 .4rem #aaa;
+        font-size: 1rem;
+        margin: .5rem 0;
+        }
+    
+    .mobileBtn{
+        display: none;
+        }
+
+
+
+
+
 
     }
 
