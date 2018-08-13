@@ -95,8 +95,8 @@ body{
 	left: 0 ;
     background-color:rgba(255,255,255, .8) ;
 	z-index: 9998 ;
-	border-left: 1px solid #E3E3E3 ; 
-	transform: translate(-100vw) ;
+    transform: translate(-100vw) ;
+    transition: all .5s;
     }
 
 
@@ -418,53 +418,10 @@ footer small a{
     color: #fff;
     }
 
-
-
 @media(min-width:650px){
- .pageHeader img{
-        margin-bottom: 0;
-        position: relative;
-        }
-
-    .mainNav{
-        position: relative;
-        }
-
-    .menu{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 30%;
-        background-color: transparent;
-        transform: translate(0);
-        text-align: center;
-        border-left: none;
-        }
-
-    .menu a{
-        width: 10rem;
-        height: 5rem;
-        padding: 3rem .2rem 0 0;
-        border:.4rem solid #fff;
-        box-shadow: 0 0 .4rem #aaa;
-        font-size: 1rem;
-        margin: .5rem 0;
-        }
-    
-    .mobileBtn{
-        display: none;
-        }
-
-    main{
-        position: relative;
-        }
-
-    .homePage p{
-        max-width: 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        } 
+ 
+ 
+   
 
  
 
