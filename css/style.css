@@ -166,6 +166,10 @@ body{
     transform: translate(0%);
     }
 
+.mobileBtnUncheck{
+    transform: translate(-100%);
+}
+
 .pageHeader img{
     display: block;
     max-width: 100%;
