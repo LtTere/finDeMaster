@@ -403,7 +403,7 @@ footer small a{
     }
 
 @media(min-width:650px){
- 
+    
     .menu span::after{
         content: "";
         display: block;
@@ -418,25 +418,25 @@ footer small a{
         }
 
     .placesCard{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        column-count: 2;
+        /* column-gap: 1rem; */
+       
+        box-shadow: 0 0 .4rem #aaa;
+        padding: 2%;
         }
+
     .placesCard h2{
         text-align: center;
         }
 
-    .placesCard iframe{
+    /* .placesCard iframe{
         display: none;
-        }
+        } */
 
     .placesCard article{
-        margin-bottom: 2%;
+    
         box-shadow: 0 0 .4rem #aaa;
-        }
 
-    .placesCard article{
-        width: 47%;
         }
    
     }
@@ -449,14 +449,16 @@ footer small a{
     .broadway:hover figcaption, .madison:hover figcaption{
         opacity: 1;
         }
-
+     
     .placesCard article{
         width: 31.33%;
+       
         }
 
     .placesCard iframe{
         display: block;
-        margin: 0;
+        /* position: absolute;
+        bottom: 0; */
         }
 }
 
