@@ -70,7 +70,7 @@ body{
 .subtitleWrapper{
     position: absolute;
     width: 100%;
-    top:4.5rem;
+    top:.5rem;
     }
 
 .subtitle{
@@ -94,7 +94,7 @@ body{
     background-color:rgba(255,255,255, .8) ;
 	z-index: 9998 ;
     transform: translate(-100vw) ;
-    transition: all .1s;
+    transition: all .3s;
     }
 
 
@@ -120,7 +120,7 @@ body{
     }
 
 .mobileBtn{
-    width: 2.5rem;
+    width: 2rem;
     height: 2.5rem;
     display: block;
     position: fixed;
@@ -328,10 +328,6 @@ article{
     transition: opacity 0.4s ease-in-out;
     }
 
-.broadway:hover figcaption, .madison:hover figcaption{
-    opacity: 1;
-    }
-
 .wrapperCenter{
     margin: 0 auto;
     width: 70%;
@@ -420,17 +416,48 @@ footer small a{
         width: 100%;
         background:#556;
         }
+
+    .placesCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        }
+    .placesCard h2{
+        text-align: center;
+        }
+
+    .placesCard iframe{
+        display: none;
+        }
+
+    .placesCard article{
+        margin-bottom: 2%;
+        box-shadow: 0 0 .4rem #aaa;
+        }
+
+    .placesCard article{
+        width: 47%;
+        }
    
-
- 
-
     }
 
 @media(min-width:1200px){
     .placesImage img:hover{
-    transform: scale(1.2);
-    }
+        transform: scale(1.2);
+        }
 
+    .broadway:hover figcaption, .madison:hover figcaption{
+        opacity: 1;
+        }
+
+    .placesCard article{
+        width: 31.33%;
+        }
+
+    .placesCard iframe{
+        display: block;
+        margin: 0;
+        }
 }
 
 
