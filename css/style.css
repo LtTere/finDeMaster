@@ -66,10 +66,6 @@ body{
     letter-spacing: -.1rem;
     }
 
-.logo h1{
-    background-color: transparent;
-    }
-
 .subtitleWrapper{
     position: absolute;
     width: 100%;
@@ -97,29 +93,29 @@ body{
     background-color:rgba(255,255,255, .8) ;
 	z-index: 9998 ;
     transform: translate(-100vw) ;
-    transition: all .3s;
+    transition: all .1s;
     }
 
 
-.menu a{
+.menu span{
     display: inline-block;
-    line-height: 2;
     text-decoration: none;
     color: #223;
     font-size: 1.2rem;
-    font-weight: bold;
-    margin-left: 7vw;
-    padding-bottom: 1.5vh;
-    position: relative;
+    margin-left: 8vw;
     cursor: pointer;
     }
 
-.menu a:hover{
+.menu span:hover{
     color: #2c67b0;
     }
 
+.menu li{
+    margin-top: 3rem;
+    }
+    
 .menu li:first-child{
-    margin-top: 4rem;
+    margin-top: 5rem;
     }
 
 .mobileBtn{
@@ -168,12 +164,14 @@ p{
     margin-bottom: 2rem;
     }
 
-.homePage p{
+.home p{
     text-align: center;
     }
+
 i{
     padding-right: .5rem;
     }
+
 a{
     text-decoration: none;
     color: rgb(123, 169,140);
@@ -198,7 +196,6 @@ h1{
     color:#223;
     font-size: 2rem;
     font-weight: 700;
-    background-color: rgba(255,255,255, .2);
     }
 
 h2{
@@ -218,6 +215,9 @@ h4{
 
 section{
     margin-bottom: 4rem;
+    }
+section h1{
+    text-shadow: 1px 1px 5px rgba(255,255,255, .8);
     }
     
 article{
@@ -411,16 +411,15 @@ footer small a{
 
 @media(min-width:650px){
  
-    .menu a::after{
+    .menu span::after{
         content: "";
         display: block;
         height: 3px;
         width: 0;
-        background-color: transparent;
         transition: all .4s;
         }
     
-    .menu a:hover::after{
+    .menu span:hover::after{
         width: 100%;
         background:#556;
         }
