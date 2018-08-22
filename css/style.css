@@ -262,12 +262,12 @@ article{
     } 
 
 .placesImage{
-    display: block;
-    position: relative;
+    display: block; 
+    position: relative; 
     width: 15rem;
     height: 15rem;
     overflow: hidden;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin: 2rem auto;
     }
 
@@ -421,7 +421,6 @@ footer small a{
         column-count: 2;
         column-gap: 4%;
         padding: 4%;
-        box-sizing: border-box;
         }
 
     .placesCard h2{
@@ -436,10 +435,10 @@ footer small a{
         overflow: hidden;
         }
    
-   
     }
 
 @media(min-width:1200px){
+ 
     .placesImage img:hover{
         transform: scale(1.2);
         }
@@ -447,20 +446,11 @@ footer small a{
     .broadway:hover figcaption, .madison:hover figcaption{
         opacity: 1;
         }
+
     .placesCard{
         column-count: 3;
-    }
-     
-    .placesCard article{
-        width: 31.33%;
-       
         }
 
-    .placesCard iframe{
-        display: block;
-        /* position: absolute;
-        bottom: 0; */
-        }
 }
 
 
