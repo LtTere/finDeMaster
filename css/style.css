@@ -95,7 +95,7 @@ body{
     animation: ascendingLetters 1.5s ease-in-out;
     }
 
-.menu{
+.mainNav{
     width: 100vw;
     height: 100vh;
     position: fixed ;
@@ -108,7 +108,7 @@ body{
     }
 
 
-.menu span{
+.mainNav span{
     display: inline-block;
     text-decoration: none;
     color: #223;
@@ -117,15 +117,15 @@ body{
     cursor: pointer;
     }
 
-.menu span:hover{
+.mainNav span:hover{
     color: #2c67b0;
     }
 
-.menu li{
+.mainNav li{
     margin-top: 3rem;
     }
 
-.menu li:first-child{
+.mainNav li:first-child{
     margin-top: 5rem;
     }
 
@@ -154,7 +154,7 @@ body{
     background-image: url(ui-img/close-buttom.svg);
     }
     
-#mobileBtn-chk:checked ~ .menu {
+#mobileBtn-chk:checked ~ .mainNav {
     transform: translate(0%);
     }
 
@@ -437,7 +437,7 @@ footer small a{
         top: 4vh;   
         }
     
-    .menu span::after{
+    .mainNav span::after{
         content: "";
         display: block;
         height: 3px;
@@ -445,7 +445,7 @@ footer small a{
         transition: all .4s;
         }
     
-    .menu span:hover::after{
+    .mainNav span:hover::after{
         width: 100%;
         background:#556;
         }
@@ -455,7 +455,6 @@ footer small a{
         flex-direction: row;
         flex-wrap: wrap; 
         align-items: flex-start;
-
         padding: 4%;
        
         /* column-count: 2;
@@ -470,17 +469,15 @@ footer small a{
     .placesCard article{
         width: 47%;
         flex: 1 0 auto;
-        
-  
-        /* height: 100%; */
         box-shadow: 0 0 .4rem #aaa;
-        
-        /* display: inline-block;
+
+  
+        /* height: 100%;
+        display: inline-block;
         width: 100%;
+        box-shadow: 0 0 .4rem #aaa;
         -webkit-column-break-inside: avoid;
         -webkit-backface-visibility: hidden;
-        
-        box-shadow: 0 0 .4rem #aaa;
         overflow: hidden; */
         } 
     
