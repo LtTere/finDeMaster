@@ -51,8 +51,7 @@ body{
         }
 .logoMedium{
     display: none;
-}
-
+    }
 
 .logo h1, .logoMedium h1{
     color: #fff;
@@ -65,7 +64,9 @@ body{
     text-align: center;
     margin-top: 1vh;
     cursor: pointer;
+    transition: all .4s;
     }
+
 .logoMedium h1{
     display: none;
     }  
@@ -90,6 +91,7 @@ body{
     font-family: 'Sedgwick Ave', cursive;
     font-size: 1.7rem;
     letter-spacing: .1rem;
+    transition: all .4s;
     animation: ascendingLetters 1.5s ease-in-out;
     }
 
@@ -413,14 +415,25 @@ footer small a{
 @media(min-width:650px){
     .logo h1{
         display: none;
-    }
+        }
+
     .logoMedium h1{
         display: block;
         font-size: 3.5rem;
-    }
+        }
+
     .logoMedium{
         display: block;
-    }
+
+        }
+        
+    .subtitleWrapper{
+        top:2rem;
+        }
+    
+    .subtitle{
+        font-size: 2.7rem;
+        }
     
     .menu span::after{
         content: "";
