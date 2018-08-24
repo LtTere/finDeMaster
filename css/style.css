@@ -452,9 +452,8 @@ footer small a{
 
     .placesCard{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap; 
-        align-items: flex-start;
+        justify-content: space-around;
         padding: 4%;
        
         /* column-count: 2;
@@ -468,7 +467,6 @@ footer small a{
 
     .placesCard article{
         width: 47%;
-        flex: 1 0 auto;
         box-shadow: 0 0 .4rem #aaa;
 
   
@@ -484,6 +482,9 @@ footer small a{
     }
 
 @media(min-width:1000px){
+    .placesCard article{
+        width: 31%;
+    }
  
     .placesImage img:hover{
         transform: scale(1.2);
