@@ -130,8 +130,8 @@ body{
     }
 
 .mobileBtn{
-    width: 2rem;
-    height: 2.5rem;
+    width: 4rem;
+    height: 3rem;
     display: block;
     position: fixed;
     top: 2vh;
@@ -412,27 +412,29 @@ footer small a{
     color: #fff;
     }
 
-@media(min-width:650px){
+@media(min-width:600px){
     .logo h1{
         display: none;
         }
-
+    .logoMedium{
+        display: block;
+        height: 8rem;
+        }
+            
     .logoMedium h1{
         display: block;
         font-size: 3.5rem;
         }
 
-    .logoMedium{
-        display: block;
-
-        }
-        
     .subtitleWrapper{
         top:2rem;
         }
     
     .subtitle{
         font-size: 2.7rem;
+        }
+    .mobileBtn{
+        top: 4vh;   
         }
     
     .menu span::after{
@@ -484,7 +486,7 @@ footer small a{
     
     }
 
-@media(min-width:1200px){
+@media(min-width:1000px){
  
     .placesImage img:hover{
         transform: scale(1.2);
