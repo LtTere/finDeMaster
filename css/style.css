@@ -11,7 +11,7 @@ body{
     font-size: 118%;
     }
 
-.logo{
+.logo, .logoMedium{
     width: 100vw;
     height: 5rem;
     position: fixed;
@@ -48,9 +48,13 @@ body{
         100%{
             opacity: 1;
             }
-        }  
+        }
+.logoMedium{
+    display: none;
+}
 
-.logo a{
+
+.logo h1, .logoMedium h1{
     color: #fff;
     font-family: 'Sedgwick Ave', cursive;
     letter-spacing: .10rem;
@@ -60,9 +64,13 @@ body{
     display: block;
     text-align: center;
     margin-top: 1vh;
+    cursor: pointer;
     }
+.logoMedium h1{
+    display: none;
+    }  
 
-.logo span{
+.logo span, .logoMedium span{
     font-family:'Montserrat', sans-serif;
     letter-spacing: -.1rem;
     }
@@ -403,6 +411,16 @@ footer small a{
     }
 
 @media(min-width:650px){
+    .logo h1{
+        display: none;
+    }
+    .logoMedium h1{
+        display: block;
+        font-size: 3.5rem;
+    }
+    .logoMedium{
+        display: block;
+    }
     
     .menu span::after{
         content: "";
