@@ -10,7 +10,6 @@ function iraSeccion() {
 	
 	var $liPulsado = $(this) ;
 	var numLiPulsado = $liPulsado.index();
-	console.log(numLiPulsado,"LI PULSADO");
 	
 	
 	var $seccionDestino = $("main section").eq(numLiPulsado);
@@ -32,7 +31,7 @@ function iraSeccion() {
 	if (resta < 500){
 		velocidad = 1000
 	}
-	
+
     $("body,html").animate({ scrollTop: scrollTopDestino } , velocidad) ;
     $('#mobileBtn-chk').prop('checked', false); 
 
