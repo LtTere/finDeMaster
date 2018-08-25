@@ -170,7 +170,7 @@ body{
     }
 
 p{
-    padding: 0 5vw;
+    padding: 0 7vw;
     margin-bottom: 2rem;
     }
 
@@ -196,13 +196,13 @@ em{
     }
 
 h2, h3, h4{
-    padding: 0 5vw;
+    padding: 0 7vw;
     color:#223;
     font-weight: 600;
     }
 
 h1{
-    padding: 0 5vw;
+    padding: 0 7vw;
     color:#223;
     font-size: 2.1rem;
     font-weight: 700;
@@ -257,7 +257,7 @@ article{
 
 .wrappOfLinks{
     position: relative;
-    padding: 0 5vw;
+    padding: 0 7vw;
     }
 
 .wrappOfLinks li{
@@ -453,13 +453,16 @@ footer small a{
         }
 
     .placesCard{
+        /* CON FLEXBOX NO HACE EL EFECTO MASONRY, PUEDE ARREGLARSE MOVIENDO LOS MARGIN-TOP PERO NO SERIA RESPONSIVE */
+        
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 4%;
        
 
         /* INCOMPATIBLE CON BORDER-RADIUS DE LA IMAGEN PARA HACER LA ANIMACION DE HOVER */
+        
         /* column-count: 2;  
         column-gap: 4%;
         padding: 4%; */
@@ -469,11 +472,15 @@ footer small a{
         text-align: center;
         }
 
+    .placesCard p{
+        padding:0 2vw;
+        }
+
     .placesCard article{
         width: 47%;
         height: 100%;
         box-shadow: 0 0 .4rem #aaa;
-
+        margin-bottom: 4%;
   
         /* 
         display: inline-block;
@@ -484,13 +491,24 @@ footer small a{
         overflow: hidden; */
         }
 
+
     }
 
-@media(min-width:1000px) and (max-width:1500px){
+@media(min-width:1000px){  
+
+    body{
+        max-width: 1500px;
+        margin: 0 auto;
+        }
     
     h1{
         font-size: 2.5rem;
         }
+
+    /* .placesCard{
+    column-count: 3;
+    } */
+    
 
     .placesCard h2{
         white-space: nowrap;
@@ -509,9 +527,54 @@ footer small a{
         opacity: 1;
         }
 
-    /* .placesCard{
-        column-count: 3;
-        } */
+    .mobileBtn{
+        display: none;
+        }
+   
+    .mainNav{
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background-color:transparent ;
+        z-index: 9998 ;
+        transform: translate(0) ;
+        }
+
+    .mainNav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        }
+
+    .mainNav li{
+        margin-top:0;
+        }
+    
+    .mainNav li:first-child{
+        margin-top:0;
+        }
+        
+    .mainNav span{
+        margin-left:0;
+        color: #fff;
+        }
+        
+    .mainNav span:hover{
+        color:#223;
+        }
+
+    .mainNav span::after{
+        display: none;
+        } 
+    
+     .mainNav span:hover::after{
+       display: none;
+        }
+ 
+    
+    
+
+    
 
    
         
