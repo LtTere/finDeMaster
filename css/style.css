@@ -107,7 +107,6 @@ body{
     transition: all .3s;
     }
 
-
 .mainNav span{
     display: inline-block;
     text-decoration: none;
@@ -126,11 +125,11 @@ body{
     }
 
 .mainNav li:first-child{
-    margin-top: 5rem;
+    margin-top: 8rem;
     }
 
 .mobileBtn{
-    width: 4rem;
+    width: 3rem;
     height: 3rem;
     display: block;
     position: fixed;
@@ -205,28 +204,29 @@ h2, h3, h4{
 h1{
     padding: 0 5vw;
     color:#223;
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     }
 
 h2{
     margin: 4rem 0 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     }
 
 h3{
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     }
 
 h4{
     margin-bottom: .8rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     }
 
 section{
     margin-bottom: 8rem;
     }
+
 section h1{
     text-shadow: 1px 1px 5px rgba(255,255,255, .8);
     }
@@ -416,6 +416,7 @@ footer small a{
     .logo h1{
         display: none;
         }
+
     .logoMedium{
         display: block;
         height: 8rem;
@@ -433,6 +434,7 @@ footer small a{
     .subtitle{
         font-size: 2.7rem;
         }
+
     .mobileBtn{
         top: 4vh;   
         }
@@ -453,10 +455,12 @@ footer small a{
     .placesCard{
         display: flex;
         flex-wrap: wrap; 
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 4%;
        
-        /* column-count: 2;
+
+        /* INCOMPATIBLE CON BORDER-RADIUS DE LA IMAGEN PARA HACER LA ANIMACION DE HOVER */
+        /* column-count: 2;  
         column-gap: 4%;
         padding: 4%; */
         }
@@ -467,24 +471,35 @@ footer small a{
 
     .placesCard article{
         width: 47%;
+        height: 100%;
         box-shadow: 0 0 .4rem #aaa;
 
   
-        /* height: 100%;
+        /* 
         display: inline-block;
         width: 100%;
         box-shadow: 0 0 .4rem #aaa;
         -webkit-column-break-inside: avoid;
         -webkit-backface-visibility: hidden;
         overflow: hidden; */
-        } 
-    
+        }
+
     }
 
-@media(min-width:1000px){
+@media(min-width:1000px) and (max-width:1500px){
+    
+    h1{
+        font-size: 2.5rem;
+        }
+
+    .placesCard h2{
+        white-space: nowrap;
+        padding: 0;
+        }
+
     .placesCard article{
         width: 31%;
-    }
+        }
  
     .placesImage img:hover{
         transform: scale(1.2);
@@ -497,6 +512,9 @@ footer small a{
     /* .placesCard{
         column-count: 3;
         } */
+
+   
+        
 
 }
 
