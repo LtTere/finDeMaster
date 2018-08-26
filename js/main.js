@@ -1,8 +1,7 @@
 
 $(".mainNav li").on("click" , iraSeccion ) ;
 
-// var altoHeader = $(".pageHeader").height();
-var altoLogo = $(".logo").height();
+var altoLogo = $(".logo").height()+10;
 
 var origen = 0
 
@@ -39,7 +38,7 @@ function iraSeccion() {
 
 
 $(".logo").on("click" , irArriba ) ;
-
+$(".logoMedium").on("click", irArriba);
 function irArriba() {
 	
 	$("body,html").animate({ scrollTop: 0 } , 2000) ;

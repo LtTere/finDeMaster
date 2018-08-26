@@ -454,7 +454,7 @@ footer small a{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 4%;
+        padding: 2%;
        
 
         /* INCOMPATIBLE CON BORDER-RADIUS DE LA IMAGEN PARA HACER LA ANIMACION DE HOVER */
@@ -491,28 +491,31 @@ footer small a{
     }
 
 @media(min-width:1000px){  
-
+   
     body{
-        max-width: 1500px;
-        margin: 0 auto;
+        width: 83%;
+        position: absolute;
+        right: 0;
         }
     
     h1{
         font-size: 2.5rem;
         }
 
+    .logoMedium{
+        width: 83%;
+        }
+
     /* .placesCard{
     column-count: 3;
     } */
-    
-
+     
     .placesCard h2{
-        white-space: nowrap;
-        padding: 0;
+        padding: 2%;
         }
 
     .placesCard article{
-        width: 31%;
+        width: 32%;
         }
  
     .placesImage img:hover{
@@ -526,14 +529,16 @@ footer small a{
     .mobileBtn{
         display: none;
         }
-   
+  
     .mainNav{
         position: fixed ;
         top: 0 ;
         left: 0 ;
-        background-color:transparent ;
-        z-index: 9998 ;
+        background-color:#fff ;
         transform: translate(0) ;
+        width: 17%;
+        height: 100%;
+        box-shadow: 0 0 .4rem #aaa;
         }
 
     .mainNav ul{
@@ -543,16 +548,18 @@ footer small a{
         }
 
     .mainNav li{
-        margin-top:0;
+        margin-top:3rem;
+        }
+
+    .mainNav li:first-child{
+        margin-top: 3rem;
         }
     
-    .mainNav li:first-child{
-        margin-top:0;
-        }
-        
     .mainNav span{
         margin-left:0;
-        color: #fff;
+        color: #223;
+        font-size: 1rem;
+        padding: 2rem;
         }
         
     .mainNav span:hover{
@@ -563,24 +570,15 @@ footer small a{
         display: none;
         } 
     
-     .mainNav span:hover::after{
+    .mainNav span:hover::after{
        display: none;
-        }
-
-
-
-
-
-
+        } 
+    
+    .mainNav span:hover{
+       color: #2c67b0;
+    }
 
     
-
-
-
-
-
-   
-        
 
 }
 
