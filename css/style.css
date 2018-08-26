@@ -538,7 +538,7 @@ footer small a{
         transform: translate(0) ;
         width: 17%;
         height: 100%;
-        box-shadow: 0 0 .4rem #aaa;
+        /* box-shadow: 0 0 .4rem #aaa; */
         }
 
     .mainNav ul{
@@ -548,12 +548,12 @@ footer small a{
         }
 
     .mainNav li{
-        margin-top:3rem;
+        margin:0 0 3rem 0;
         }
-
+ 
     .mainNav li:first-child{
         margin-top: 3rem;
-        }
+        } 
     
     .mainNav span{
         margin-left:0;
@@ -571,12 +571,30 @@ footer small a{
         } 
     
     .mainNav span:hover::after{
-       display: none;
+        display: none;
         } 
     
     .mainNav span:hover{
-       color: #2c67b0;
-    }
+        color: #2c67b0;
+        }
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+        width: 17%;
+        margin-left: 0;
+        padding: 0;
+        background-color: transparent;
+        }
+
+    footer h1, 
+    footer small{
+        padding: 2rem;
+        color: #223;
+        }
+
+    
 
     
 
