@@ -49,9 +49,14 @@ body{
             opacity: 1;
             }
         }
+
 .logoMedium{
     display: none;
     }
+
+.logoMedium h1{
+    display: none;
+    } 
 
 .logo h1, .logoMedium h1{
     color: #fff;
@@ -66,10 +71,6 @@ body{
     cursor: pointer;
     transition: all .4s;
     }
-
-.logoMedium h1{
-    display: none;
-    }  
 
 .logo span, .logoMedium span{
     font-family:'Montserrat', sans-serif;
@@ -104,7 +105,7 @@ body{
     background-color:rgba(255,255,255, .8) ;
 	z-index: 9998 ;
     transform: translate(-100vw) ;
-    transition: all .3s;
+    transition: all .4s;
     }
 
 .mainNav span{
@@ -408,7 +409,7 @@ footer small a{
     color: #fff;
     }
 
-@media(min-width:600px){
+@media(min-width:650px){
     .logo h1{
         display: none;
         }
@@ -490,7 +491,7 @@ footer small a{
 
     }
 
-@media(min-width:1000px){  
+@media(min-width:1200px){  
    
     body{
         width: 83%;
@@ -545,6 +546,7 @@ footer small a{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        text-align: center;
         }
 
     .mainNav li{
@@ -578,6 +580,13 @@ footer small a{
         color: #2c67b0;
         }
    
+    }
+
+@media(min-width:1500px){
+    .mainNav li{
+        margin:0 0 .5rem 0;
+        }
+
     footer {
         position: fixed;
         bottom: 0;
@@ -605,6 +614,4 @@ footer small a{
     footer small a{
         color: #2c67b0;
         }
-
-    
-    }
+}
