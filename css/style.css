@@ -509,7 +509,8 @@ footer small a{
     /* .placesCard{
     column-count: 3;
     } */
-     
+
+   
     .placesCard h2{
         padding: 2%;
         }
@@ -538,7 +539,6 @@ footer small a{
         transform: translate(0) ;
         width: 17%;
         height: 100%;
-        /* box-shadow: 0 0 .4rem #aaa; */
         }
 
     .mainNav ul{
@@ -577,31 +577,34 @@ footer small a{
     .mainNav span:hover{
         color: #2c67b0;
         }
-    footer{
+   
+    footer {
         position: fixed;
-        left: 0;
         bottom: 0;
-        z-index: 9999;
+        left: 0;
         width: 17%;
-        margin-left: 0;
-        padding: 0;
+        z-index: 9999;
         background-color: transparent;
         }
-
-    footer h1, 
+    
+    footer h1,
     footer small{
         padding: 2rem;
         color: #223;
         }
 
+    footer .social{
+        margin-left: 0;
+        justify-content: center;
+        }
     
+    footer small{
+        border-top: none;
+        }
+
+    footer small a{
+        color: #2c67b0;
+        }
 
     
-
-}
-
-
-
-
-
-
+    }
