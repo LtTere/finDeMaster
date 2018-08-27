@@ -1,7 +1,7 @@
 
 $(".mainNav li").on("click" , iraSeccion ) ;
 
-var altoLogo = $(".logo").height()+10;
+var $altoLogo = $(".logo").height()+10;
 
 var origen = 0
 
@@ -14,8 +14,8 @@ function iraSeccion() {
 	var $seccionDestino = $("main section").eq(numLiPulsado);
 	var $seccionOrigen = $("main section").eq(origen);
 	
-	var scrollTopDestino = $seccionDestino.offset().top - altoLogo ;
-	var scrollTopOrigen = $seccionOrigen.offset().top - altoLogo;
+	var scrollTopDestino = $seccionDestino.offset().top - $altoLogo ;
+	var scrollTopOrigen = $seccionOrigen.offset().top - $altoLogo;
 
 	var resta = scrollTopDestino - scrollTopOrigen;
 
@@ -46,7 +46,20 @@ function irArriba() {
 }
 
 
+$(".passWrapp").hide()
 
+$(window).scroll(function() {
+var $alturaActual = $(this).scrollTop()
+var $alturaSeccion = $(".touristCardWrapper").offset().top
+var $alturaMuestrate = $alturaSeccion - $altoLogo
+
+if($alturaActual > $alturaMuestrate){
+	$('.passWrapp').show(800)
+}
+	
+});  
+	
+ 
 
 
 

@@ -410,6 +410,7 @@ footer small a{
     }
 
 @media(min-width:650px){
+   
     .logo h1{
         display: none;
         }
@@ -587,13 +588,19 @@ footer small a{
         margin:0 0 .5rem 0;
         }
 
+    .mainNav span{
+        font-size: 1.3rem;
+        font-weight: 400;
+        }
+
     footer {
-        position: fixed;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 17%;
         z-index: 10;
         background-color: transparent;
+        margin-left: -17%;
         }
     
     footer h1,
