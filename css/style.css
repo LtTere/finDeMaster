@@ -15,7 +15,7 @@ body{
     width: 100vw;
     height: 5rem;
     position: fixed;
-    z-index: 9998;
+    z-index: 2;
     background-image:linear-gradient(to bottom,
           hsl(211.88, 65.98%, 38.04%) 0%,
           hsla(211.88, 65.98%, 38.04%, 0.993) 14.5%,
@@ -86,7 +86,7 @@ body{
 .subtitle{
     position:relative;
     text-align: center;
-    z-index: 9997;
+    z-index: 1;
     white-space: nowrap;
     color: #fff;
     font-family: 'Sedgwick Ave', cursive;
@@ -99,12 +99,12 @@ body{
 .mainNav{
     width: 100vw;
     height: 100vh;
-    position: fixed ;
-    top: 0 ;
-	left: 0 ;
-    background-color:rgba(255,255,255, .8) ;
-	z-index: 9998 ;
-    transform: translate(-100vw) ;
+    position: fixed;
+    top: 0;
+	left: 0;
+    background-color:rgba(255,255,255, .8);
+	z-index:2;
+    transform: translate(-100vw);
     transition: all .4s;
     }
 
@@ -136,7 +136,7 @@ body{
     position: fixed;
     top: 2vh;
     left: 2vw;
-    z-index: 9999;
+    z-index: 10;
     background-image: url(ui-img/open-buttom.svg);
     background-size: 72%;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ body{
 
 .pageHeader img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto; 
     margin-bottom: 4rem;
     border-bottom-left-radius:70rem 12rem;
@@ -592,7 +592,7 @@ footer small a{
         bottom: 0;
         left: 0;
         width: 17%;
-        z-index: 9999;
+        z-index: 10;
         background-color: transparent;
         }
     
