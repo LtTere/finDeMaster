@@ -70,7 +70,7 @@ var $alturaSeccion = $(".touristCard").offset().top;
 var $alturaMuestrate = $alturaSeccion - $altoLogo;
 
 if($alturaActual > $alturaMuestrate){
-	$(".passWrapp").show(800);
+	$(".passWrapp").show(700);
 	
 }
 	
