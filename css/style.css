@@ -108,7 +108,7 @@ body{
     transition: all .4s;
     }
 
-.mainNav span{
+.mainNav a{
     display: inline-block;
     text-decoration: none;
     color: #223;
@@ -116,13 +116,12 @@ body{
     margin-left: 8vw;
     cursor: pointer;
     }
+.mainNav a:hover{
+    color: #2c67b0;
+    }
 
 .mainNav li{
     margin-top: 3rem;
-    }
-
-.mainNav li:hover{
-    color: #2c67b0;
     }
 
 .mainNav li:first-child{
@@ -315,22 +314,16 @@ article{
     opacity: 0;
     background-color:rgba(0,0,0,0.7); 
     transition: all 0.4s ease-in-out;
-    
-    }
-    
+    }   
+
 .broadway figcaption a, .madison figcaption a{
     color: #fff;
     display: block;
     position: relative;
-    top: 7vh;
+    top: 8vh;
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
-    cursor: default;
-    }
-
-.broadway .linkBroadway a, .madison .linkMadison a{
-    opacity: 0;
     transition: opacity 0.4s ease-in-out;
     }
 
@@ -436,7 +429,7 @@ footer small a{
         top: 4vh;   
         }
     
-    .mainNav span::after{
+    .mainNav a::after{
         content: "";
         display: block;
         height: 3px;
@@ -444,9 +437,9 @@ footer small a{
         transition: all .4s;
         }
     
-    .mainNav span:hover::after{
+    .mainNav a:hover::after{
         width: 100%;
-        background:#556;
+        background-color:#223;
         }
 
     .placesCard{
@@ -522,17 +515,18 @@ footer small a{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: space-around;
         text-align: center;
         }
 
     .mainNav li{
-        margin:0 1rem 3rem ;
+        margin:12% 1rem 0;
         border-radius: .8rem;
         box-shadow: 0 0 .4rem #aaa;
         }
 
     .mainNav li:first-child{
-        margin-top: 3rem;
+        margin-top:12%;
         } 
     
     .mainNav li:hover{
@@ -543,26 +537,26 @@ footer small a{
         transform: scale(1.05);
         }
 
-    .mainNav span{
+    .mainNav a{
         margin-left:0;
         color: #223;
         font-size: 1.3rem;
         padding: 2rem;
         }
         
-    .mainNav span:hover{
+    .mainNav a:hover{
         color:#223;
         }
 
-    .mainNav span::after{
+    .mainNav a::after{
         display: none;
         } 
     
-    .mainNav span:hover::after{
+    .mainNav a:hover::after{
         display: none;
         } 
     
-    .mainNav span:hover{
+    .mainNav a:hover{
         color: #2c67b0;
         }
 /* .placesCard{
@@ -581,6 +575,7 @@ footer small a{
     .placesImage img:hover{
         transform: scale(1.2);
         }
+
     .broadway figcaption, .madison figcaption{
         cursor: pointer;
         }
@@ -588,7 +583,7 @@ footer small a{
     .broadway figcaption a, .madison figcaption a{
         cursor: pointer;
         }
-          
+
     .broadway:hover figcaption, .madison:hover figcaption{
         opacity: 1;
       

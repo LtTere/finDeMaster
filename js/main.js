@@ -1,53 +1,57 @@
 
 
-//IR A SECCIONES PRICIPALES Y CONTROL DE VELOCIDAD DE SCROLL DEPENDIENDO DEL PUNTO DONDE SE ENCUENTRE
+//IR A SECCIONES PRICIPALES 
 
 
-$(".mainNav li").on("click" , iraSeccion ) ;
+// $(".mainNav li").on("click" , iraSeccion ) ;
 
-var $altoLogo = $(".logo").height()+10;
+// var $altoLogo = $(".logo").height()+10;
 
-var origen = 0
+// var origen = 0 
 
-function iraSeccion() {
+// function iraSeccion() {
 	
-	var $liPulsado = $(this) ;
-	var numLiPulsado = $liPulsado.index();
+// 	var $liPulsado = $(this) ;
+// 	var numLiPulsado = $liPulsado.index();
 	
 	
-	var $seccionDestino = $("main section").eq(numLiPulsado);
-	var $seccionOrigen = $("main section").eq(origen);
+// 	var $seccionDestino = $("main section").eq(numLiPulsado);
+// 	var $seccionOrigen = $("main section").eq(origen);
 	
-	var scrollTopDestino = $seccionDestino.offset().top - $altoLogo ;
-	var scrollTopOrigen = $seccionOrigen.offset().top - $altoLogo;
+// 	var scrollTopDestino = $seccionDestino.offset().top - $altoLogo ;
+// 	var scrollTopOrigen = $seccionOrigen.offset().top - $altoLogo;
 
-	var resta = scrollTopDestino - scrollTopOrigen;
+// 	var resta = scrollTopDestino - scrollTopOrigen;
 
-	if(resta < 0){
-		resta = resta * -1
-	}
+// PARA VARIAR LA VELOCIDAD DE RECORRIDO DEPENDIENDO DE DONDE SE ENCUENTRE EL SCROLL
 
-	origen = numLiPulsado;
+	// if(resta < 0){
+	// 	resta = resta * -1
+	// }
+
+	// origen = numLiPulsado;
 	
-	var velocidad = 2000;
+	// var velocidad = 2000;
 
-	if (resta < 500){
-		velocidad = 1000
-	}
+	// if (resta < 500){
+	// 	velocidad = 1000
+	// }
 
-    $("body,html").animate({ scrollTop: scrollTopDestino } , velocidad) ;
-    $('#mobileBtn-chk').prop('checked', false); 
+    // $("body,html").animate({ scrollTop: scrollTopDestino } , 1000) ;
+	
+//AL HACER CLICK EN ALGUNA DE LAS SECCIONES EN EL MENU, TODA LA ESCTRUCTURA DEL MENU SE OCULTA
+// 	$('#mobileBtn-chk').prop('checked', false); 
 
-}
+// }
 
 
-//AL HACER CLICK EN EL LOGO SE COLOCA AL INICIO
+//AL HACER CLICK EN EL LOGO SE COLOCA EN SCROLL 0
 
 $(".logo").on("click" , irArriba ) ;
 $(".logoMedium").on("click", irArriba);
 function irArriba() {
 	
-	$("body,html").animate({ scrollTop: 0 } , 2000) ;
+	$("body,html").animate({ scrollTop: 0 } , 2000) ; //el 2000 se sustituye por velocidad
 	
 }
 
