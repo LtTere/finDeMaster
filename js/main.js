@@ -89,7 +89,7 @@ $(window).scroll(function() {
 	
 	if($alturaActual > $alturaMuestrate){
 		
-		$(".metroWrapp").slideDown(800);
+		$(".metroWrapp").slideDown(700);
 		
 	
 	}

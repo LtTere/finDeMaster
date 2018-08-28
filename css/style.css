@@ -117,12 +117,12 @@ body{
     cursor: pointer;
     }
 
-.mainNav span:hover{
-    color: #2c67b0;
-    }
-
 .mainNav li{
     margin-top: 3rem;
+    }
+
+.mainNav li:hover{
+    color: #2c67b0;
     }
 
 .mainNav li:first-child{
@@ -292,20 +292,18 @@ article{
     }
 
 .broadway, .madison {
-    max-width: 400px;
-    height: auto;
+    width: 400px;
+    height: 250px;
     margin: 2rem 9vw;
     border: .4rem solid #fff;
     overflow: hidden;
     text-align: center;
     position: relative;
     box-shadow: 0 0 .4rem #aaa;
-    cursor: pointer;
     }
 
 .broadway img, .madison img {
     display: block;
-    position: relative;
     }
 
 .broadway figcaption, .madison figcaption {
@@ -316,18 +314,19 @@ article{
     left: 0;
     opacity: 0;
     background-color:rgba(0,0,0,0.7); 
-    box-sizing:border-box;
     transition: all 0.4s ease-in-out;
+    
     }
     
 .broadway figcaption a, .madison figcaption a{
     color: #fff;
     display: block;
     position: relative;
-    top: 8vh;
+    top: 7vh;
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
+    cursor: default;
     }
 
 .broadway .linkBroadway a, .madison .linkMadison a{
@@ -359,7 +358,7 @@ article{
 footer{
     width: 100%;
     background-color: #25292e;
-    margin: 2rem 0 0;
+    margin: 2rem 0 0body
     }
 
 footer h1{
@@ -443,7 +442,6 @@ footer small a{
         height: 3px;
         width: 0;
         transition: all .4s;
-         
         }
     
     .mainNav span:hover::after{
@@ -495,9 +493,7 @@ footer small a{
 
 @media(min-width:1200px){  
     
-   
-   
-   body{
+  body{
         width: 83%;
         position: absolute;
         right: 0;
@@ -507,37 +503,15 @@ footer small a{
         font-size: 2.5rem;
         }
 
-    .logoMedium{
+ .logoMedium{
         width: 83%;
-        }
-
-    /* .placesCard{
-    column-count: 3;
-    } */
-
-   
-    .placesCard h2{
-        padding: 2%;
-        }
-
-    .placesCard article{
-        width: 32%;
-        }
- 
-    .placesImage img:hover{
-        transform: scale(1.2);
-        }
-
-    .broadway:hover figcaption, .madison:hover figcaption{
-        opacity: 1;
-        }
+        }   
 
     .mobileBtn{
         display: none;
         }
-  
+
     .mainNav{
-       
         background-color:#fff ;
         transform: translate(0) ;
         width: 17%;
@@ -590,6 +564,34 @@ footer small a{
     
     .mainNav span:hover{
         color: #2c67b0;
+        }
+/* .placesCard{
+    column-count: 3;
+    } */
+
+
+    .placesCard h2{
+        padding: 2%;
+        }
+
+    .placesCard article{
+        width: 32%;
+        }
+    
+    .placesImage img:hover{
+        transform: scale(1.2);
+        }
+    .broadway figcaption, .madison figcaption{
+        cursor: pointer;
+        }
+
+    .broadway figcaption a, .madison figcaption a{
+        cursor: pointer;
+        }
+          
+    .broadway:hover figcaption, .madison:hover figcaption{
+        opacity: 1;
+      
         }
    
     }
