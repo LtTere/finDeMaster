@@ -46,18 +46,64 @@ function irArriba() {
 }
 
 
-$(".passWrapp").hide()
+$(".passWrapp").hide();
+$(".metroWrapp").hide();
+$(".tableWrapp").hide();
+
 
 $(window).scroll(function() {
-var $alturaActual = $(this).scrollTop()
-var $alturaSeccion = $(".touristCardWrapper").offset().top
-var $alturaMuestrate = $alturaSeccion - $altoLogo
+
+var $alturaActual = $(this).scrollTop();
+
+var $alturaSeccion = $(".touristCard").offset().top;
+
+
+var $alturaMuestrate = $alturaSeccion - $altoLogo;
 
 if($alturaActual > $alturaMuestrate){
-	$('.passWrapp').show(800)
+	$(".passWrapp").show(800);
+	
 }
 	
 });  
+
+
+$(window).scroll(function() {
+
+	var $alturaActual = $(this).scrollTop();
+	
+	
+	var $alturaSeccion = $(".appCard").offset().top;
+	
+	
+	var $alturaMuestrate = $alturaSeccion - $altoLogo;
+	
+	if($alturaActual > $alturaMuestrate){
+		
+		$(".metroWrapp").slideDown(800);
+		
+	
+	}
+		
+	}); 
+
+
+	$(window).scroll(function() {
+
+		var $alturaActual = $(this).scrollTop();
+		
+		
+		var $alturaSeccion = $(".appTable").offset().top;
+		
+		var $alturaMuestrate = $alturaSeccion - $altoLogo;
+		
+		if($alturaActual > $alturaMuestrate){
+		
+			$(".tableWrapp").fadeIn(800);
+		
+		}
+			
+		}); 
 	
  
 
