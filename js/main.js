@@ -5,7 +5,7 @@
 
 // $(".mainNav li").on("click" , iraSeccion ) ;
 
-// var $altoLogo = $(".logo").height()+10;
+var $altoLogo = $(".logo").height()+10;
 
 // var origen = 0 
 
@@ -112,7 +112,7 @@ $(window).scroll(function() {
 		
 		if($alturaActual > $alturaMuestrate){
 		
-			$(".tableWrapp").fadeIn(800);
+			$(".tableWrapp").show(800);
 		
 		}
 			
