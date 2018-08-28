@@ -443,6 +443,7 @@ footer small a{
         height: 3px;
         width: 0;
         transition: all .4s;
+         
         }
     
     .mainNav span:hover::after{
@@ -561,7 +562,7 @@ footer small a{
     .mainNav span{
         margin-left:0;
         color: #223;
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 2rem;
         }
         
@@ -588,37 +589,6 @@ footer small a{
         margin:0 0 .5rem 0;
         }
 
-    .mainNav span{
-        font-size: 1.3rem;
-        font-weight: 400;
-        }
+   
 
-    footer {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        width: 17%;
-        z-index: 10;
-        background-color: transparent;
-        margin-left: -17%;
-        }
-    
-    footer h1,
-    footer small{
-        padding: 2rem;
-        color: #223;
-        }
-
-    footer .social{
-        margin-left: 0;
-        justify-content: center;
-        }
-    
-    footer small{
-        border-top: none;
-        }
-
-    footer small a{
-        color: #2c67b0;
-        }
-}
+    }

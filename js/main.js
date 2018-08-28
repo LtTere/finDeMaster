@@ -1,4 +1,8 @@
 
+
+//IR A SECCIONES PRICIPALES Y CONTROL DE VELOCIDAD DE SCROLL DEPENDIENDO DEL PUNTO DONDE SE ENCUENTRE
+
+
 $(".mainNav li").on("click" , iraSeccion ) ;
 
 var $altoLogo = $(".logo").height()+10;
@@ -37,6 +41,8 @@ function iraSeccion() {
 }
 
 
+//AL HACER CLICK EN EL LOGO SE COLOCA AL INICIO
+
 $(".logo").on("click" , irArriba ) ;
 $(".logoMedium").on("click", irArriba);
 function irArriba() {
@@ -45,6 +51,9 @@ function irArriba() {
 	
 }
 
+
+//ANIMACIONES DE LAS IMAGENES DEL CONTENIDO
+// AL LLEGAR AL INICIO DE CADA UNA DE SUS SECCIONES CARGA LA IMAGEN CON UNA ANIMACION
 
 $(".passWrapp").hide();
 $(".metroWrapp").hide();
