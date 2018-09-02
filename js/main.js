@@ -41,7 +41,7 @@ function iraSeccion() {
 		velocidad = 1000
 	}
 
-	$("body,html").animate({ scrollTop: scrollTopDestino } , 1000) ;
+	$("body,html").animate({ scrollTop: scrollTopDestino } , velocidad) ;
 	
 	
 // AL HACER CLICK EN ALGUNA DE LAS SECCIONES EN EL MENU, TODA LA ESCTRUCTURA DEL MENU SE OCULTA
@@ -61,7 +61,7 @@ $(".logoMedium").on("click", irArriba);
 
 function irArriba() {
 	
-	$("body,html").animate({ scrollTop: 0 } , 2000) ; //el 2000 se sustituye por velocidad
+	$("body,html").animate({ scrollTop: 0 } , 1200) ; 
 	
 }
 
