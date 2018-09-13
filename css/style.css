@@ -293,7 +293,7 @@ article{
 
 .broadway, .madison {
     max-width: 400px;
-    height: 250px;
+    max-height: 250px;
     margin: 2rem 9vw;
     border: .4rem solid #fff;
     overflow: hidden;
@@ -321,7 +321,8 @@ article{
     color: #fff;
     display: block;
     position: relative;
-    top: 8vh;
+    top:50%;
+    transform: translate(0,-50%);
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
@@ -481,17 +482,30 @@ footer small a{
         -webkit-backface-visibility: hidden;
         overflow: hidden; */
         }
+    .activities{
+        text-align: center;
+        }
+
+    .attractionWrapp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+    .attractionWrapp article{
+        width: 47%;
+        }
 
 
     }
 
 @media(min-width:1200px){  
     
-    body{
-        width: 83%;
-        position: absolute;
-        right: 0;
-        }
+/* body{
+    width: 83%;
+    position: absolute;
+    right: 0;
+    } */
     
     h1{
         font-size: 2.5rem;
@@ -660,11 +674,11 @@ footer small a{
         display: none;
         }
 
-    .mainNav{
-        background-color:#fff ;
-        transform: translate(0) ;
-        width: 17%;
-        }
+/* .mainNav{
+background-color:#fff ;
+transform: translate(0) ;
+width: 17%;
+} */
 
     .mainNav ul{
         display: flex;
