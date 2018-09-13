@@ -1,4 +1,5 @@
 
+  var scroll = new SmoothScroll('a[href*="#"]');
 
 //IR A SECCIONES PRICIPALES 
 
