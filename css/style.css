@@ -482,7 +482,8 @@ footer small a{
         -webkit-backface-visibility: hidden;
         overflow: hidden; */
         }
-    .activities{
+  
+    .activities h2, .activities p, .attractionWrapp{
         text-align: center;
         }
 
@@ -495,17 +496,16 @@ footer small a{
     .attractionWrapp article{
         width: 47%;
         }
-
-
+    
     }
 
 @media(min-width:1200px){  
-    
-/* body{
-    width: 83%;
-    position: absolute;
-    right: 0;
-    } */
+
+    body{
+        width: 83%;
+        position: absolute;
+        right: 0;
+        }
     
     h1{
         font-size: 2.5rem;
@@ -674,11 +674,11 @@ footer small a{
         display: none;
         }
 
-/* .mainNav{
-background-color:#fff ;
-transform: translate(0) ;
-width: 17%;
-} */
+    .mainNav{
+        background-color:#fff ;
+        transform: translate(0) ;
+        width: 17%;
+        }
 
     .mainNav ul{
         display: flex;
@@ -786,9 +786,7 @@ width: 17%;
         opacity: 1;
         }
 
-    
 
-        
     
 }
 
