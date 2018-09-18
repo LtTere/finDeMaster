@@ -499,7 +499,7 @@ footer small a{
     
     }
 
-@media(min-width:1200px){  
+@media(min-width:1000px){  
 
     body{
         width: 83%;
@@ -578,7 +578,7 @@ footer small a{
         @keyframes flyCycle {
 
         100% {
-        background-position: -900px 0;
+        background-position: -56.25rem 0;
             }
         }
 
@@ -680,22 +680,15 @@ footer small a{
         width: 17%;
         }
 
-    .mainNav ul{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        }
-
     .mainNav li{
-        margin:12% 1rem 0;
+        text-align: center;
+        margin:15% 1rem;
         border-radius: .8rem;
         box-shadow: 0 0 .4rem #aaa;
         }
 
     .mainNav li:first-child{
-        margin-top:12%;
+        margin-top:30%;
         } 
     
     .mainNav li:hover{
@@ -710,7 +703,7 @@ footer small a{
         margin-left:0;
         color: #223;
         font-size: 1.3rem;
-        padding: 2rem;
+        padding: 1rem;
         }
         
     .mainNav span:hover{
@@ -756,7 +749,7 @@ footer small a{
 
     .metroWrapp{
         position: absolute;
-        top:5%;
+        top:15%;
         right: 7vw; 
         width: 30%;
         height: auto;
