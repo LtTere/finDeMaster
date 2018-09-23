@@ -721,38 +721,23 @@ footer small a{
     .mainNav span:hover{
         color: #2c67b0;
         }
+        
 /* .placesCard{
     column-count: 3;
     } */
 
-    .wrappCard{
-        position: relative;
-        }
-
-    .wrappCardText{
-        width: 70%;
-        margin:0 0 4rem 30%;
-        }
-
     .passWrapp{
-        position: absolute;
-        top: 0;
-        left: 7vw; 
-        width: 30%;
-        height: auto;
+        float: left;
+        padding-left: 7vw;
         }
     
     .wrappCardTextMetro{
         text-align: right;
-        width: 70%;
         }
 
     .metroWrapp{
-        position: absolute;
-        top:15%;
-        right: 7vw; 
-        width: 30%;
-        height: auto;
+        float:right;
+        padding-right: 7vw;
         }
    
     .placesCard h2{
