@@ -1,8 +1,4 @@
-
-  var scroll = new SmoothScroll('a[href*="#"]');
-
 //IR A SECCIONES PRICIPALES 
-
 
 $(".mainNav li").on("click" , iraSeccion );
 

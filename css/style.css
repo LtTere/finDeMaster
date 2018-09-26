@@ -116,6 +116,7 @@ body{
     margin-left: 8vw;
     cursor: pointer;
     }
+
 .mainNav span:hover{
     color: #2c67b0;
     }
@@ -680,6 +681,7 @@ footer small a{
         width: 17%;
         }
 
+
     .mainNav li{
         text-align: center;
         margin:15% 1rem;
@@ -693,8 +695,13 @@ footer small a{
     
     .mainNav li:hover{
         box-shadow: .25rem .2rem .8rem 0  #aaa;
+        cursor: pointer;
         }
-
+    
+    .mainNav li:hover span{
+        color: #2c67b0;
+        }
+        
     .mainNav li:active{
         transform: scale(1.05);
         }
@@ -705,10 +712,6 @@ footer small a{
         font-size: 1.3rem;
         padding: 1rem;
         }
-        
-    .mainNav span:hover{
-        color:#223;
-        }
 
     .mainNav span::after{
         display: none;
@@ -718,9 +721,9 @@ footer small a{
         display: none;
         } 
     
-    .mainNav span:hover{
+    /* .mainNav span:hover{
         color: #2c67b0;
-        }
+        } */
 
 /* .placesCard{
     column-count: 3;
