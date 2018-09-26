@@ -122,11 +122,11 @@ body{
     }
 
 .mainNav li{
-    margin-top: 3rem;
+    margin-top: 8%;
     }
 
 .mainNav li:first-child{
-    margin-top: 8rem;
+    margin-top: 6rem;
     }
 
 .mobileBtn{
@@ -170,7 +170,6 @@ p{
     padding: 0 7vw;
     margin-bottom: 2rem;
     }
-
 
 .home p{
     text-align: center;
@@ -448,13 +447,13 @@ footer small a{
     .placesCard{
         /* CON FLEXBOX NO HACE EL EFECTO MASONRY, PUEDE ARREGLARSE MOVIENDO LOS MARGIN-TOP PERO NO SERIA RESPONSIVE */
         
-         display: flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 2%;
              
 
-        /* INCOMPATIBLE CON BORDER-RADIUS DE LA IMAGEN PARA HACER LA ANIMACION DE :   HOVER */
+        /* INCOMPATIBLE CON BORDER-RADIUS DE LA IMAGEN PARA HACER LA ANIMACION :HOVER */
         
         /* column-count: 2;  
         column-gap: 4%;
@@ -681,10 +680,9 @@ footer small a{
         width: 17%;
         }
 
-
     .mainNav li{
         text-align: center;
-        margin:15% 1rem;
+        margin:15% 5%;
         border-radius: .8rem;
         box-shadow: 0 0 .4rem #aaa;
         }
@@ -701,7 +699,7 @@ footer small a{
     .mainNav li:hover span{
         color: #2c67b0;
         }
-        
+
     .mainNav li:active{
         transform: scale(1.05);
         }
@@ -721,11 +719,7 @@ footer small a{
         display: none;
         } 
     
-    /* .mainNav span:hover{
-        color: #2c67b0;
-        } */
-
-/* .placesCard{
+    /* .placesCard{
     column-count: 3;
     } */
 
@@ -766,8 +760,6 @@ footer small a{
     .broadway:hover figcaption, .madison:hover figcaption{
         opacity: 1;
         }
-
-
-    
+   
 }
 
